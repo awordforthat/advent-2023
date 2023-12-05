@@ -151,11 +151,6 @@ int main()
     }
 
     // Now filter the list of asterisks down to only those that have two related numbers
-    auto predicate = [](const std::vector<std::string> &vec)
-    {
-        return vec.size() == 2;
-    };
-
     std::map<std::tuple<int, int>, std::vector<std::string>> filtered_asterisks;
 
     int sum = 0;
